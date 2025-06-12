@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000;
+    color: #e0e0e0;
+    line-height: 1.6;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-mode {
+    background-color: #0a0a0a;
+    color: #dcdcdc;
+  }
+  
+  body.dark-mode header {
+    background: #111;
+  }
+  
+  body.dark-mode .btn,
+  body.dark-mode button {
+    background: #ffffff;
+    color: #000;
+  }
+  
+  /* Header */
+  header {
+    background: #111;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00e0ff;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover,
+  .nav-links a.active {
+    color: #00e0ff;
+    border-bottom: 2px solid #00e0ff;
+  }
+  
+  #dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  #dark-mode-toggle:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Sections */
+  section {
+    padding: 4rem 2rem;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+  }
+  
+  section.reveal {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Section themes */
+  #home {
+    background: #121212;
+    color: #ffffff;
+  }
+  
+  #about {
+    background: #0d1117;
+    color: #c9d1d9;
+  }
+  
+  #projects {
+    background: #161b22;
+    color: #f0f6fc;
+  }
+  
+  #contact {
+    background: #0b0f15;
+    color: #ffffff;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #00e0ff;
+    color: #000;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #00bcd4;
+  }
+  
+  /* Project Cards */
+  .project-card {
+    background: #1e1e1e;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  /* Form */
+  form {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #0a0a0a;
+    color: #fff;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    background: #00e0ff;
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #00bcd4;
+  }
+  
+  /* Social Links */
+  .social-links {
+    margin-top: 1rem;
+  }
+  
+  .social-links a {
+    color: #00e0ff;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #00bcd4;
+  }
+  
+  footer {
+    background: #111;
+    color: #ccc;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    .project-card {
+      width: 90%;
+    }
+  
+    input, textarea, button {
+      font-size: 1rem;
+    }
+  }
+  
