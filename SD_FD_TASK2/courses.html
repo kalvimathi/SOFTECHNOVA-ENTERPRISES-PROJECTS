@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KM Learn - Courses</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">KM Learn</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="courses-section">
+    <h2>Our Popular Courses</h2>
+    <input type="text" placeholder="Search courses..." class="search-bar" />
+
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="https://via.placeholder.com/300x150" alt="Course Image">
+        <h3>Web Development Bootcamp</h3>
+        <p>Instructor: John Doe</p>
+        <button>Enroll</button>
+      </div>
+      <div class="course-card">
+        <img src="https://via.placeholder.com/300x150" alt="Course Image">
+        <h3>Python for Beginners</h3>
+        <p>Instructor: Jane Smith</p>
+        <button>Enroll</button>
+      </div>
+      <!-- Add more course cards -->
+    </div>
+  </section>
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLogin()">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <label>Email:</label>
+        <input type="email" required />
+        <label>Password:</label>
+        <input type="password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

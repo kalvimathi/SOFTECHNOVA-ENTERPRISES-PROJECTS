@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - KM Learn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">KM Learn</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="#" onclick="openLogin()">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h1>About KM Learn</h1>
+      <p>KM Learn is a next-generation E-learning platform that aims to democratize education by providing high-quality, accessible, and affordable courses to learners around the world.</p>
+
+      <h2>Our Mission</h2>
+      <p>To empower students, professionals, and enthusiasts by delivering interactive, real-world learning experiences that foster growth and knowledge.</p>
+
+      <h2>Why Choose KM Learn?</h2>
+      <ul class="about-list">
+        <li>✔ 100+ expert instructors</li>
+        <li>✔ Learn anytime, anywhere</li>
+        <li>✔ Practical assignments and certificates</li>
+        <li>✔ Community support and discussion forums</li>
+      </ul>
+
+      <h2>Meet Our Team</h2>
+      <div class="team">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/100" alt="Founder">
+          <h3>Kanima</h3>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/100" alt="Instructor">
+          <h3>Rahul Sharma</h3>
+          <p>Lead Instructor</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/100" alt="Developer">
+          <h3>Anita Joshi</h3>
+          <p>Front-End Developer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLogin()">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <label>Email:</label>
+        <input type="email" required />
+        <label>Password:</label>
+        <input type="password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+    <script src="script.js"></script>
+</body>
+</html>

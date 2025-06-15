@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KM Learn - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">KM Learn</div>
+      <ul class="nav-links">
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <!-- Inside your navbar -->
+<li><a href="#" id="logoutBtn">Logout</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section class="dashboard">
+    <h2>Welcome, Student!</h2>
+    <h3>Your Enrolled Courses</h3>
+    <div class="courses-grid">
+      <div class="course-card">
+        <h3>Web Development</h3>
+        <p>Progress: 75%</p>
+        <progress value="75" max="100"></progress>
+      </div>
+      <div class="course-card">
+        <h3>Data Science Basics</h3>
+        <p>Progress: 40%</p>
+        <progress value="40" max="100"></progress>
+      </div>
+    </div>
+  </section>
+    <script src="script.js"></script>
+</body>
+</html>

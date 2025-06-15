@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KM Learn - E-Learning Platform</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">KM Learn</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="C:\Users\kalvimathi\Documents\SOFTECHNOVA\SD_FD_TASK2\courses.html">Courses</a></li>
+        <li><a href="C:\Users\kalvimathi\Documents\SOFTECHNOVA\SD_FD_TASK2\instructor.html">Instructor</a></li>
+        <li><a href="C:\Users\kalvimathi\Documents\SOFTECHNOVA\SD_FD_TASK2\dashboard.html">Dashboard</a></li>
+        <li><a href="C:\Users\kalvimathi\Documents\SOFTECHNOVA\SD_FD_TASK2\about.html">About</a></li>
+        <li><a href="#" onclick="openLogin()">Login</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </nav>
+  </header>
+  <section class="hero">
+  <h1>Welcome to KM Learn</h1>
+  <p>Learn. Grow. Succeed. Explore our wide range of online courses today.</p>
+  <a href="courses.html">
+    <button class="cta-button">Explore Courses</button>
+  </a>
+</section>
+  <!-- Login Modal -->
+  <div class="modal" id="loginModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeLogin()">&times;</span>
+      <h2>Login</h2>
+      <form>
+        <label>Email:</label>
+        <input type="email" required />
+        <label>Password:</label>
+        <input type="password" required />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
